@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		633BC6FB22EDE73D00821BCA /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 633BC6FA22EDE73D00821BCA /* Settings.bundle */; };
+		636166EA251443B20054FA7E /* ThreshProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636166E9251443B20054FA7E /* ThreshProvider.swift */; };
+		636EFCAA21E62DD300DE43BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636EFC9C21E62DD300DE43BC /* ViewController.swift */; };
+		636EFCAF21E62DD300DE43BC /* VideoCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636EFCA221E62DD300DE43BC /* VideoCapture.swift */; };
+		636EFCB321E62DD300DE43BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636EFCA721E62DD300DE43BC /* AppDelegate.swift */; };
+		636EFCB921E62E3900DE43BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 636EFCB821E62E3900DE43BC /* Assets.xcassets */; };
+		63CF371F2514455300E2DEA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6323C44D22186177008AE681 /* LaunchScreen.storyboard */; };
+		63CF37202514455300E2DEA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6323C44F22186177008AE681 /* Main.storyboard */; };
+		73E3C8002CE3AF1A00E2D85C /* av_intensive.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 73E3C7FD2CE3AF1A00E2D85C /* av_intensive.mlpackage */; };
+		73E3C8022CE3AF1A00E2D85C /* av_quick.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 73E3C7FB2CE3AF1A00E2D85C /* av_quick.mlpackage */; };
+		8EDAA33950796844333D60A7 /* BBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDAA633C1F2B50286D16008 /* BBoxView.swift */; };
+		9146338B2D7223FD005DDED3 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9146338A2D7223F4005DDED3 /* TutorialViewController.swift */; };
+		916383932D8E2DE1006E7BF5 /* ChatGPT in Frameworks */ = {isa = PBXBuildFile; productRef = 916383922D8E2DE1006E7BF5 /* ChatGPT */; };
+		916383952D8E2DE1006E7BF5 /* GPT in Frameworks */ = {isa = PBXBuildFile; productRef = 916383942D8E2DE1006E7BF5 /* GPT */; };
+		916383972D8E2DE1006E7BF5 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 916383962D8E2DE1006E7BF5 /* OpenAI */; };
+		9163839B2D8F3D12006E7BF5 /* av_optimal.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 9163839A2D8F3D12006E7BF5 /* av_optimal.mlpackage */; };
+		9178EC3C2D69303400B6438D /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9178EC3B2D69303400B6438D /* SharedData.swift */; };
+		9178EC3E2D69317E00B6438D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9178EC3D2D69317E00B6438D /* SettingsViewController.swift */; };
+		919A77952D909526002DFC52 /* SwiftSpeech in Frameworks */ = {isa = PBXBuildFile; productRef = 919A77942D909526002DFC52 /* SwiftSpeech */; };
+		91B18F882D9722C10010C5C0 /* av_doors.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 91B18F872D9722C10010C5C0 /* av_doors.mlpackage */; };
+		91D9C9C02D6A845E00BA3065 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D9C9BF2D6A845500BA3065 /* FAQViewController.swift */; };
+		91DEACE82D580C1400A0F718 /* assistivevisionlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 91DEACE72D580C1400A0F718 /* assistivevisionlogo.png */; };
+		91FB7A772D8F768100C0DB20 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 91FB7A762D8F768100C0DB20 /* GoogleGenerativeAI */; };
+		91FB7A792D8F789D00C0DB20 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FB7A782D8F789600C0DB20 /* Environment.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		919995B02DA1C47B006F61BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BCB410F21C3096100BFC4D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BCB411621C3096100BFC4D0;
+			remoteInfo = "Assistive Vision";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6323C44D22186177008AE681 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6323C44F22186177008AE681 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		632892DF22EB3DB100A12D9C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		633BC6FA22EDE73D00821BCA /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		636166E9251443B20054FA7E /* ThreshProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreshProvider.swift; sourceTree = "<group>"; };
+		636EFC9C21E62DD300DE43BC /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		636EFCA221E62DD300DE43BC /* VideoCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCapture.swift; sourceTree = "<group>"; };
+		636EFCA721E62DD300DE43BC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		636EFCB821E62E3900DE43BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63B8B0A821E62A890026FBC3 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		73E3C7FB2CE3AF1A00E2D85C /* av_quick.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = av_quick.mlpackage; sourceTree = "<group>"; };
+		73E3C7FD2CE3AF1A00E2D85C /* av_intensive.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = av_intensive.mlpackage; sourceTree = "<group>"; };
+		7BCB411721C3096100BFC4D0 /* Assistive Vision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Assistive Vision.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EDAA633C1F2B50286D16008 /* BBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBoxView.swift; sourceTree = "<group>"; };
+		8EDAAA4507D2D23D7FAB827F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9146338A2D7223F4005DDED3 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		9163839A2D8F3D12006E7BF5 /* av_optimal.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = av_optimal.mlpackage; sourceTree = "<group>"; };
+		9178EC3B2D69303400B6438D /* SharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedData.swift; sourceTree = "<group>"; };
+		9178EC3D2D69317E00B6438D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		919995AC2DA1C47B006F61BB /* Assistive VisionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Assistive VisionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		919995C32DA1C84C006F61BB /* Assistive Vision.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Assistive Vision.xctestplan"; sourceTree = "<group>"; };
+		91B18F872D9722C10010C5C0 /* av_doors.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = av_doors.mlpackage; sourceTree = "<group>"; };
+		91D9C9BF2D6A845500BA3065 /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
+		91DEACE72D580C1400A0F718 /* assistivevisionlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = assistivevisionlogo.png; sourceTree = "<group>"; };
+		91FB7A782D8F789600C0DB20 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		919995AD2DA1C47B006F61BB /* Assistive VisionTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Assistive VisionTests"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BCB411421C3096100BFC4D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				919A77952D909526002DFC52 /* SwiftSpeech in Frameworks */,
+				916383952D8E2DE1006E7BF5 /* GPT in Frameworks */,
+				916383972D8E2DE1006E7BF5 /* OpenAI in Frameworks */,
+				916383932D8E2DE1006E7BF5 /* ChatGPT in Frameworks */,
+				91FB7A772D8F768100C0DB20 /* GoogleGenerativeAI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919995A92DA1C47B006F61BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		636166E72514438D0054FA7E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				636166E9251443B20054FA7E /* ThreshProvider.swift */,
+				8EDAA633C1F2B50286D16008 /* BBoxView.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		636EFC9B21E62DD300DE43BC /* AssistiveVision */ = {
+			isa = PBXGroup;
+			children = (
+				63A946D8271800E20001C3ED /* Models */,
+				636166E72514438D0054FA7E /* Utilities */,
+				636EFCA721E62DD300DE43BC /* AppDelegate.swift */,
+				91FB7A782D8F789600C0DB20 /* Environment.swift */,
+				636EFC9C21E62DD300DE43BC /* ViewController.swift */,
+				9178EC3B2D69303400B6438D /* SharedData.swift */,
+				9178EC3D2D69317E00B6438D /* SettingsViewController.swift */,
+				91D9C9BF2D6A845500BA3065 /* FAQViewController.swift */,
+				9146338A2D7223F4005DDED3 /* TutorialViewController.swift */,
+				636EFCA221E62DD300DE43BC /* VideoCapture.swift */,
+				6323C44D22186177008AE681 /* LaunchScreen.storyboard */,
+				6323C44F22186177008AE681 /* Main.storyboard */,
+				633BC6FA22EDE73D00821BCA /* Settings.bundle */,
+				632892DF22EB3DB100A12D9C /* Info.plist */,
+				636EFCB821E62E3900DE43BC /* Assets.xcassets */,
+				91DEACE72D580C1400A0F718 /* assistivevisionlogo.png */,
+			);
+			path = AssistiveVision;
+			sourceTree = "<group>";
+		};
+		63A946D8271800E20001C3ED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9163839A2D8F3D12006E7BF5 /* av_optimal.mlpackage */,
+				91B18F872D9722C10010C5C0 /* av_doors.mlpackage */,
+				73E3C7FB2CE3AF1A00E2D85C /* av_quick.mlpackage */,
+				73E3C7FD2CE3AF1A00E2D85C /* av_intensive.mlpackage */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7BCB410E21C3096100BFC4D0 = {
+			isa = PBXGroup;
+			children = (
+				919995C32DA1C84C006F61BB /* Assistive Vision.xctestplan */,
+				8EDAAA4507D2D23D7FAB827F /* README.md */,
+				636EFC9B21E62DD300DE43BC /* AssistiveVision */,
+				63B8B0A821E62A890026FBC3 /* .gitignore */,
+				919995AD2DA1C47B006F61BB /* Assistive VisionTests */,
+				7BCB411821C3096100BFC4D0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7BCB411821C3096100BFC4D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BCB411721C3096100BFC4D0 /* Assistive Vision.app */,
+				919995AC2DA1C47B006F61BB /* Assistive VisionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BCB411621C3096100BFC4D0 /* Assistive Vision */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BCB412921C3096200BFC4D0 /* Build configuration list for PBXNativeTarget "Assistive Vision" */;
+			buildPhases = (
+				63F890A422A1723300072C38 /* ShellScript */,
+				7BCB411321C3096100BFC4D0 /* Sources */,
+				7BCB411421C3096100BFC4D0 /* Frameworks */,
+				7BCB411521C3096100BFC4D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Assistive Vision";
+			productName = AssistiveVision;
+			productReference = 7BCB411721C3096100BFC4D0 /* Assistive Vision.app */;
+			productType = "com.apple.product-type.application";
+		};
+		919995AB2DA1C47B006F61BB /* Assistive VisionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 919995B42DA1C47B006F61BB /* Build configuration list for PBXNativeTarget "Assistive VisionTests" */;
+			buildPhases = (
+				919995A82DA1C47B006F61BB /* Sources */,
+				919995A92DA1C47B006F61BB /* Frameworks */,
+				919995AA2DA1C47B006F61BB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				919995B12DA1C47B006F61BB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				919995AD2DA1C47B006F61BB /* Assistive VisionTests */,
+			);
+			name = "Assistive VisionTests";
+			packageProductDependencies = (
+			);
+			productName = "Assistive VisionTests";
+			productReference = 919995AC2DA1C47B006F61BB /* Assistive VisionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BCB410F21C3096100BFC4D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1520;
+				ORGANIZATIONNAME = AssistiveVision;
+				TargetAttributes = {
+					7BCB411621C3096100BFC4D0 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+					};
+					919995AB2DA1C47B006F61BB = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 7BCB411621C3096100BFC4D0;
+					};
+				};
+			};
+			buildConfigurationList = 7BCB411221C3096100BFC4D0 /* Build configuration list for PBXProject "Assistive Vision" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BCB410E21C3096100BFC4D0;
+			packageReferences = (
+				916383912D8E2DE1006E7BF5 /* XCRemoteSwiftPackageReference "GPTSwift" */,
+				91FB7A752D8F768100C0DB20 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+				919A77932D909526002DFC52 /* XCRemoteSwiftPackageReference "SwiftSpeech" */,
+				91E8462C2DA31CF800603776 /* XCRemoteSwiftPackageReference "swift-testing" */,
+			);
+			productRefGroup = 7BCB411821C3096100BFC4D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BCB411621C3096100BFC4D0 /* Assistive Vision */,
+				919995AB2DA1C47B006F61BB /* Assistive VisionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BCB411521C3096100BFC4D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				636EFCB921E62E3900DE43BC /* Assets.xcassets in Resources */,
+				63CF37202514455300E2DEA1 /* Main.storyboard in Resources */,
+				63CF371F2514455300E2DEA1 /* LaunchScreen.storyboard in Resources */,
+				633BC6FB22EDE73D00821BCA /* Settings.bundle in Resources */,
+				91DEACE82D580C1400A0F718 /* assistivevisionlogo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919995AA2DA1C47B006F61BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63F890A422A1723300072C38 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BCB411321C3096100BFC4D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				636EFCAF21E62DD300DE43BC /* VideoCapture.swift in Sources */,
+				636166EA251443B20054FA7E /* ThreshProvider.swift in Sources */,
+				636EFCB321E62DD300DE43BC /* AppDelegate.swift in Sources */,
+				91D9C9C02D6A845E00BA3065 /* FAQViewController.swift in Sources */,
+				91FB7A792D8F789D00C0DB20 /* Environment.swift in Sources */,
+				73E3C8002CE3AF1A00E2D85C /* av_intensive.mlpackage in Sources */,
+				9163839B2D8F3D12006E7BF5 /* av_optimal.mlpackage in Sources */,
+				9146338B2D7223FD005DDED3 /* TutorialViewController.swift in Sources */,
+				9178EC3C2D69303400B6438D /* SharedData.swift in Sources */,
+				73E3C8022CE3AF1A00E2D85C /* av_quick.mlpackage in Sources */,
+				636EFCAA21E62DD300DE43BC /* ViewController.swift in Sources */,
+				8EDAA33950796844333D60A7 /* BBoxView.swift in Sources */,
+				9178EC3E2D69317E00B6438D /* SettingsViewController.swift in Sources */,
+				91B18F882D9722C10010C5C0 /* av_doors.mlpackage in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919995A82DA1C47B006F61BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		919995B12DA1C47B006F61BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BCB411621C3096100BFC4D0 /* Assistive Vision */;
+			targetProxy = 919995B02DA1C47B006F61BB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7BCB412721C3096200BFC4D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7BCB412821C3096200BFC4D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BCB412A21C3096200BFC4D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
+				DEVELOPMENT_TEAM = ZV2Y3YXT8U;
+				INFOPLIST_FILE = AssistiveVision/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Assistive Vision";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 8.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = venkatyenduri.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7BCB412B21C3096200BFC4D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 0;
+				DEVELOPMENT_TEAM = ZV2Y3YXT8U;
+				INFOPLIST_FILE = AssistiveVision/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Assistive Vision";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 8.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = venkatyenduri.com;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		919995B22DA1C47B006F61BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZV2Y3YXT8U;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "XLRA.Assistive-VisionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Assistive Vision.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Assistive Vision";
+			};
+			name = Debug;
+		};
+		919995B32DA1C47B006F61BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZV2Y3YXT8U;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "XLRA.Assistive-VisionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Assistive Vision.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Assistive Vision";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BCB411221C3096100BFC4D0 /* Build configuration list for PBXProject "Assistive Vision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BCB412721C3096200BFC4D0 /* Debug */,
+				7BCB412821C3096200BFC4D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BCB412921C3096200BFC4D0 /* Build configuration list for PBXNativeTarget "Assistive Vision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BCB412A21C3096200BFC4D0 /* Debug */,
+				7BCB412B21C3096200BFC4D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		919995B42DA1C47B006F61BB /* Build configuration list for PBXNativeTarget "Assistive VisionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				919995B22DA1C47B006F61BB /* Debug */,
+				919995B32DA1C47B006F61BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		916383912D8E2DE1006E7BF5 /* XCRemoteSwiftPackageReference "GPTSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftedMind/GPTSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.1;
+			};
+		};
+		919A77932D909526002DFC52 /* XCRemoteSwiftPackageReference "SwiftSpeech" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Cay-Zhang/SwiftSpeech";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		91E8462C2DA31CF800603776 /* XCRemoteSwiftPackageReference "swift-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftlang/swift-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.0;
+			};
+		};
+		91FB7A752D8F768100C0DB20 /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google-gemini/generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		916383922D8E2DE1006E7BF5 /* ChatGPT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 916383912D8E2DE1006E7BF5 /* XCRemoteSwiftPackageReference "GPTSwift" */;
+			productName = ChatGPT;
+		};
+		916383942D8E2DE1006E7BF5 /* GPT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 916383912D8E2DE1006E7BF5 /* XCRemoteSwiftPackageReference "GPTSwift" */;
+			productName = GPT;
+		};
+		916383962D8E2DE1006E7BF5 /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 916383912D8E2DE1006E7BF5 /* XCRemoteSwiftPackageReference "GPTSwift" */;
+			productName = OpenAI;
+		};
+		919A77942D909526002DFC52 /* SwiftSpeech */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 919A77932D909526002DFC52 /* XCRemoteSwiftPackageReference "SwiftSpeech" */;
+			productName = SwiftSpeech;
+		};
+		91FB7A762D8F768100C0DB20 /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 91FB7A752D8F768100C0DB20 /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7BCB410F21C3096100BFC4D0 /* Project object */;
+}

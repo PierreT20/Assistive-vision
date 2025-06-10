@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "52A7BF3C-ED2B-49F4-9481-238768EE76F6",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:YOLO.xcodeproj",
+      "identifier" : "7BCB411621C3096100BFC4D0",
+      "name" : "Assistive Vision"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:YOLO.xcodeproj",
+        "identifier" : "919995AB2DA1C47B006F61BB",
+        "name" : "Assistive VisionTests"
+      }
+    }
+  ],
+  "version" : 1
+}

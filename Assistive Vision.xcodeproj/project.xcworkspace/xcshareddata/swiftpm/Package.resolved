@@ -1,0 +1,60 @@
+{
+  "originHash" : "5deb85443a834407d4df32728d11adab08dab05d9e29bd7fb7f64ab4f6965e35",
+  "pins" : [
+    {
+      "identity" : "generative-ai-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/google-gemini/generative-ai-swift",
+      "state" : {
+        "revision" : "44b8ce120425f9cf53ca756f3434ca2c2696f8bd",
+        "version" : "0.5.6"
+      }
+    },
+    {
+      "identity" : "get",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/kean/Get",
+      "state" : {
+        "revision" : "31249885da1052872e0ac91a2943f62567c0d96d",
+        "version" : "2.2.1"
+      }
+    },
+    {
+      "identity" : "gptswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftedMind/GPTSwift",
+      "state" : {
+        "revision" : "c90d3fc4418119aa6cc796ded049fa73f4b28185",
+        "version" : "3.0.1"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/swift-syntax.git",
+      "state" : {
+        "revision" : "f99ae8aa18f0cf0d53481901f88a0991dc3bd4a2",
+        "version" : "601.0.1"
+      }
+    },
+    {
+      "identity" : "swift-testing",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/swift-testing",
+      "state" : {
+        "revision" : "43b6f88e2f2712e0f2a97e6acc75b55f22234299",
+        "version" : "6.1.0"
+      }
+    },
+    {
+      "identity" : "swiftspeech",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Cay-Zhang/SwiftSpeech",
+      "state" : {
+        "branch" : "master",
+        "revision" : "6e41f289f5ccc1751ef5674972d46b48b326c4c6"
+      }
+    }
+  ],
+  "version" : 3
+}
